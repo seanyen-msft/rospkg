@@ -430,7 +430,7 @@ def parse_manifest_file(dirpath, manifest_name, rospack=None):
 
         return manifest
 
-    with open(filename, 'r', encoding='utf-8') as f:
+    with open(filename, 'r') as f:
         return parse_manifest(manifest_name, f.read(), filename)
 
 
